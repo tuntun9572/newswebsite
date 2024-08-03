@@ -1,0 +1,337 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "ca16134f-758d-4798-9497-b2c0f8a74b4c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Q1. Create one variable containing following type of data:\n",
+    "str = \"hello world\"\n",
+    "list = [\"movie\",\"Animal\"]\n",
+    "float = 23.66\n",
+    "tuple =(\"apple\",\"banana\",\"cherry\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "17e6b4f5-9cb4-4c4c-8f64-b6b1ab714509",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q2. Given are some following variables containing data:\n",
+    "valu1 = ''\n",
+    "print(type(valu1)) #string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "586cd1d9-ead1-448f-adf4-6e0b1795666a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "valu2 ='[DS,ML,Python]'\n",
+    "print(type(valu2)) #string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "79beabb2-44f8-4b97-a4a6-8d4f0323c9e8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "valu3 =['DS','ML','Python']\n",
+    "print(type(valu3)) # list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "82ea02b1-d0f0-4fb0-aa63-c683f5a66b20",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'float'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "valu4 = 1.\n",
+    "print(type(valu4))  #float"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "3621a968-a3e4-4189-8794-cf7708a39405",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.8\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q3. Explain the use of the following operators using an example:\n",
+    "# / #this is devide  two value  \n",
+    "x = 4/5\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "4069ad7c-db63-492a-95ec-0e80a5048b4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "# % are gives  remainder \n",
+    "x1 = 4%5\n",
+    "print(x1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "2c840e69-3c76-4c84-8129-3e7b1b201698",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#// \n",
+    "x3 = 4//5\n",
+    "print(x3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "74bb9c31-5b74-4c81-8be8-d9b0f75777b4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1024\n"
+     ]
+    }
+   ],
+   "source": [
+    "# ** it ia calclute squqre \n",
+    "x4 = 4**5\n",
+    "print(x4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "4dad0242-31ee-4c38-bd46-30fd26865e42",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Element: 42, Data Type: int\n",
+      "Element: hello, Data Type: str\n",
+      "Element: 3.14, Data Type: float\n",
+      "Element: True, Data Type: bool\n",
+      "Element: [1, 2, 3], Data Type: list\n",
+      "Element: {'name': 'Alice'}, Data Type: dict\n",
+      "Element: (10, 20), Data Type: tuple\n",
+      "Element: None, Data Type: NoneType\n",
+      "Element: (5+2j), Data Type: complex\n",
+      "Element: False, Data Type: bool\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q4. Create a list of length 10 of your choice containing multiple types of data. Using for loop print the\n",
+    "# element and its data type.\n",
+    "\n",
+    "my_list = [42, 'hello', 3.14, True, [1, 2, 3], {'name': 'Alice'}, (10, 20), None, 5 + 2j, False]\n",
+    "for item in my_list:\n",
+    "    print(f\"Element: {item}, Data Type: {type(item).__name__}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "78b83aee-51ef-4439-95b4-457da8f883a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10 is not divisible by 3.\n",
+      "15 is divisible by 3.\n",
+      "7 is not divisible by 3.\n",
+      "9 is divisible by 3.\n",
+      "21 is divisible by 3.\n",
+      "30 is divisible by 3.\n",
+      "12 is divisible by 3.\n",
+      "18 is divisible by 3.\n",
+      "5 is not divisible by 3.\n",
+      "27 is divisible by 3.\n",
+      "8 is not divisible by 3.\n",
+      "33 is divisible by 3.\n",
+      "22 is not divisible by 3.\n",
+      "14 is not divisible by 3.\n",
+      "6 is divisible by 3.\n",
+      "25 is not divisible by 3.\n",
+      "36 is divisible by 3.\n",
+      "42 is divisible by 3.\n",
+      "11 is not divisible by 3.\n",
+      "20 is not divisible by 3.\n",
+      "24 is divisible by 3.\n",
+      "39 is divisible by 3.\n",
+      "16 is not divisible by 3.\n",
+      "28 is not divisible by 3.\n",
+      "45 is divisible by 3.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q6. Create a list containing 25 int type data. Using for loop and if-else condition print if the element is\n",
+    "# divisible by 3 or not.\n",
+    "\n",
+    "my_list = [10, 15, 7, 9, 21, 30, 12, 18, 5, 27, 8, 33, 22, 14, 6, 25, 36, 42, 11, 20, 24, 39, 16, 28, 45]\n",
+    "\n",
+    "for num in my_list:\n",
+    "    if num % 3 == 0:\n",
+    "        print(f\"{num} is divisible by 3.\")\n",
+    "    else:\n",
+    "        print(f\"{num} is not divisible by 3.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "a35f5e30-85b1-4379-8372-60aa1d14c935",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q7. What do you understand about mutable and immutable data types? Give examples for both showing\n",
+    "# this property.\n",
+    "\n",
+    "# 1.mutable data typr:-\n",
+    "# In Python, mutable data types are those whose values can be changed or modified after they are created. Here are some examples of mutable data types\n",
+    "# example\n",
+    "my_list = [1, 2, 3]\n",
+    "my_list.append(4)  \n",
+    "print(my_list)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "fc061020-5141-42f5-a5c0-0426477643ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2 .immutable data type:-\n",
+    "# immutable data type can't change value immutable objects cannot be changed after creation. \n",
+    "# example\n",
+    "my_string = \"Hello\"\n",
+    "new_string = my_string + \" World\"  # Creates a new string\n",
+    "print(my_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "425607f3-2b88-4f5e-84e3-b9f6fdca8f06",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
